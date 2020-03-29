@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../scripts.js"></script>
+	<link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+
+<div class="topnav">
+  <a href="../home.html">Home</a>
+  <a class="active" href="#fall_term/fall_term.html">Fall Term</a>
+  <a href="#Winter Term">Winter Term</a>
+  <a href="#about">About</a>
+</div>
+
+<!-- <div class="dropdown">
+  <a class="dropbtn" href="../home.html">Home</a>
+</div> -->
+
+
+<!-- <div class="dropdown">
+  <button class="dropbtn">Fall Term</button>
+  <button class="dropbtn">
+  	<a class="active">Fall Term</a>
+  </button>
+  <div class="dropdown-content">
+    <a class="active" href="#">Documents</a>
+    <a href="#">Photos/Videos</a>
+    <a href="#">CAD Model</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Winter Term</button>
+  <div class="dropdown-content">
+    <a href="#">Documents</a>
+    <a href="#">Photos/Videos</a>
+    <a href="#">CAD Model</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Spring Term</button>
+  <div class="dropdown-content">
+    <a href="#">Documents</a>
+    <a href="#">Photos/Videos</a>
+    <a href="#">CAD Model</a>
+  </div>
+</div> -->
+
+
+
+<div class="main">
+<!--   <h2>Fall Term</h2>
+  <p>This tab shows progress made during the Fall Term.</p> -->
+
+
+
+<div class="sidenav">
+  <a class="side_tab" id="description_tab"
+  	onclick="open_tab('description', 'description_tab')"> Description </a>
+  <a class="side_tab" id="photos_and_videos_tab"
+  	onclick="open_tab('photos_and_videos', 'photos_and_videos_tab')"> Photos & Videos </a>
+  <a class="side_tab" id="documents_tab"
+  	onclick="open_tab('documents', 'documents_tab')"> Documents </a>
+  <a class="side_tab" id="cad_model_tab"
+  	onclick="open_tab('cad_model', 'cad_model_tab')"> CAD Model </a>
+</div>
+
+
+<div id="description" class="tabcontent" style="display: block;">	<!-- show this tab when page is loaded -->
+  <h2>Description</h2>
+  
+
+</div>
+<!-- ------------------------------------------------ -->
+<div id="photos_and_videos" class="tabcontent">
+  <h2> Photos & Videos </h2>
+
+  <p style="clear: both;">
+		<h3> Photos & Videos </h3>
+	  <div class="gallery">
+		  <a target="_blank" href="images/drive.jpg">
+		    <img src="images/drive.jpg" alt="Drive" width="600" height="400">
+		  </a>
+		  <div class="desc">Zeta Drive</div>
+		</div>
+	</p>
+
+
+	<p style="clear: both;">
+		<h3> Machining </h3>
+		<div class="gallery">
+		  <a target="_blank" href="images/drive.jpg">
+		    <img src="images/drive.jpg" alt="Drive" width="600" height="400">
+		  </a>
+		  <div class="desc">Zeta Drive</div>
+		</div>
+	</p>
+
+
+</div>
+<!-- ------------------------------------------------ -->
+<div id="documents" class="tabcontent">
+  <h2>Documents</h2>
+  
+<p> Project Proposal </p>
+<embed src="documents/ECE491_Team27_ProjectProposal.pdf" type="application/pdf"   height="700px" width="500">
+
+
+
+
+
+</div>
+<!-- ------------------------------------------------ -->
+<div id="cad_model" class="tabcontent">
+  <h2>CAD Model</h2>
+  <p>Some news this fine day!</p> 
+</div>
+
+<!-- <iframe src="https://myhub.autodesk360.com/ue2906d38/shares/public/SH919a0QTf3c32634dcf7c5742a628995fde?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe> -->
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
