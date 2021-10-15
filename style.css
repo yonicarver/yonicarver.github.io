@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(128, 128, 128);
 }
 
 .topnav {
@@ -26,7 +27,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #dc610f;
   color: white;
 }
 
