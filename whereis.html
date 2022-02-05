@@ -14,6 +14,42 @@
 			border:1px solid black;
 		}
 
+
+#earth {
+  width: 200px;
+  height: 200px;
+  background: url("images/earth_clipart.jpg");
+  border-radius: 50%;
+  background-size: 300px;
+  /*box-shadow: inset 8px 8px 80px 10px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);*/
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /*-webkit-animation-name: rotate;
+     -webkit-animation-duration: 10s;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-timing-function: linear;*/
+}
+@keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 610px 0px;
+  }
+}
+/*@-webkit-keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 610px 0px;
+  }
+}*/
+
+
+
 	</style>
 
 
@@ -23,7 +59,7 @@
 <body>
 	<center>
 		<h1> Where in the World is Yoni? 🌎</h1>
-
+<div id="earth"></div>
 		<p>&nbsp;</p>
 
 		<h2>Laval, Quebec</h2>
@@ -32,7 +68,7 @@
 		<p>&nbsp;</p>
 		
 		<iframe
-		  width="25%"
+		  width="75%"
 		  height="450"
 		  style="border:0;border-radius: 10px;"
 		  loading="lazy"
@@ -47,7 +83,7 @@
 
 		
 
-		<table style="width:10%">
+		<table style="width:50%">
 			<tr>
 				<th>Previous Locations</th>
 			</tr>
@@ -68,6 +104,7 @@
 			</tr>
 		</table>
 
+<p>&nbsp;</p>
 
 
 
