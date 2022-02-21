@@ -1,54 +1,52 @@
 <!DOCTYPE html>
+<!-- because I travel way too much I need to keep track too -->
+<!-- thanks Adina <3 -->
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="scripts.js"></script>
 	<link rel="stylesheet" href="style.css">
 
-	<title>Where in the World is Yoni?</title>
-	<link rel="icon" href="images/globe.png">
+	<title>Where in the World is Yoni?</title> <!-- tab title -->
+	<link rel="icon" href="images/globe.png">  <!-- tab icon -->
 
 
 	<style>
 		table, th, td {
 			border:1px solid black;
+			border-collapse: collapse;
+		}
+
+		tr #center {
+			text-align: center;
 		}
 
 
-#earth {
-  width: 200px;
-  height: 200px;
-  background: url("images/earth_clipart.jpg");
-  border-radius: 50%;
-  background-size: 300px;
-  /*box-shadow: inset 8px 8px 80px 10px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);*/
-  animation-name: rotate;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  /*-webkit-animation-name: rotate;
-     -webkit-animation-duration: 10s;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-timing-function: linear;*/
-}
-@keyframes rotate {
-  from {
-    background-position: 0px 0px;
-  }
-  to {
-    background-position: 610px 0px;
-  }
-}
-/*@-webkit-keyframes rotate {
-  from {
-    background-position: 0px 0px;
-  }
-  to {
-    background-position: 610px 0px;
-  }
-}*/
 
-
+		#earth {
+			width: 50px;
+			height: 50px;
+			background: url("images/earth_clipart.jpg");
+			border-radius: 50%;
+			background-size: 70px;
+			/*box-shadow: inset 8px 8px 80px 10px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);*/
+			animation-name: rotate;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			/*-webkit-animation-name: rotate;
+			-webkit-animation-duration: 10s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;*/
+		}
+		@keyframes rotate {
+		  from {
+		    background-position: 0px 0px;
+		  }
+		  to {
+		    background-position: 610px 0px;
+		  }
+		}
 
 	</style>
 
@@ -58,25 +56,30 @@
   
 <body>
 	<center>
-		<h1> Where in the World is Yoni? 🌎</h1>
-<div id="earth"></div>
+		<h1> Where in the World is Yoni? 🌎 </h1>
+
 		<p>&nbsp;</p>
 
-		<!-- <h2>Laval, Quebec</h2> -->
-		<h2> New York City </h2>
+		<!-- <div id="earth"></div> -->
+
+		<h2> Laval, Quebec </h2>
+
+
+		<p>&nbsp;</p>
+	
 		
 		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89319.32843135897!2d-73.77972000703853!3d45.60604159025869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc92107b4dfda6b%3A0x2eb4b26fe333c419!2sLaval%2C%20QC!5e0!3m2!1sen!2sca!4v1643597308855!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 		<p>&nbsp;</p>
 		
 		<iframe
-		  width="75%"
+		  width="60%"
 		  height="450"
 		  style="border:0;border-radius: 10px;"
 		  loading="lazy"
 		  allowfullscreen
 		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB52tlG0nyso395Tzl2aI20P65EGWo035o
 		    &q=
-		    New York City
+		    Laval, Quebec
 		    ">
 		</iframe>
 
@@ -84,29 +87,84 @@
 
 		
 
-		<table style="width:50%">
+		<table style="width:20%">
 			<tr>
 				<th>Previous Locations</th>
 			</tr>
-			<tr>
-				<td>Laval, Quebec</td>
-			</tr>
-			<tr>
-				<td>Orlando, FL</td>
-			</tr>
-			<tr>
-				<td>Nassau, Bahamas</td>
-			</tr>
-			<tr>
-				<td>Laval, Quebec</td>
-			</tr>
-			<tr>
-				<td>NYC</td>
-			</tr>
-			<tr>
-				<td>Elmont, NY</td>
-			</tr>
+			<tr><td>
+					New York City
+			</td></tr>
+			<tr><td>
+				Laval, Quebec
+			</td></tr>
+			<tr><td>
+					Orlando, FL
+			</td></tr>
+			<tr><td>
+					Nassau, Bahamas
+			</td></tr>
+			<tr><td>
+					Laval, Quebec
+			</td></tr>
+			<tr><td>
+					New York City
+			</td></tr>
+			<tr><td>
+					Elmont, NY
+			</td></tr>
 		</table>
+
+<p>&nbsp;</p>
+
+		<table style="width:20%">
+			<tr>
+				<td>
+				New York City
+			</td>
+			<td id="center">
+				2
+			</td>
+			</tr>
+
+			<tr>
+				<td>
+				Laval, Quebec
+			</td>
+			<td id="center">
+				2
+			</td>
+			</tr>
+
+			<tr>
+				<td>
+				Orlando, FL
+			</td>
+			<td id="center">
+				1
+			</td>
+			</tr>
+
+			<tr>
+				<td>
+				Nassau, Bahamas
+			</td>
+			<td id="center">
+				1
+			</td>
+			</tr>
+
+			<tr>
+				<td>
+				ELmont, NY
+			</td>
+			<td id="center">
+				1
+			</td>
+			</tr>
+
+		</table>
+
+
 
 <p>&nbsp;</p>
 
