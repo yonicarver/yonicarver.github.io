@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- because I travel way too much I need to keep track too -->
+<!-- thanks Adina <3 -->
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="whereis_style.css">
+
+	<title>Where in the World is Yoni?</title> <!-- tab title -->
+	<link rel="icon" href="images/globe.png">  <!-- tab icon -->
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+	<center>
+
+<div class="parent">
+
+<!-- <div class="child"> -->
+	<div class="child" id="sidenav">
+	  <tab class="side_tab" id="tab1"
+	  	onclick="open_tab('home_tab1')"> Main </tab>
+	  <tab class="side_tab" id="tab2"
+	  	onclick="open_tab('home_tab2')"> History </tab>
+	  <tab class="side_tab" id="tab3"
+	  	onclick="open_tab('home_tab3')"> TAB3 </tab>
+	  <tab class="side_tab" id="home_tab4"
+	  	onclick="open_tab('tab4', 'tab4_tab')"> TAB4 </tab>
+	</div>
+<!-- </div> -->
+
+
+	<div class="child">test</div>
+
+
+	<div class="child" id="location_text">
+		<h2> Laval, Quebec </h2>
+	</div>
+
+	<div class="child" id="map">
+		<iframe
+			style = "
+				height: 100%;
+				width: 100%;
+				border: none;
+				border-radius: 15px;"
+			loading="lazy"
+			allowfullscreen
+			src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB52tlG0nyso395Tzl2aI20P65EGWo035o
+			&q=
+			Laval, Quebec
+			">
+		</iframe>
+	</div>
+
+
+</div>
+
+
+</center>
+</body>

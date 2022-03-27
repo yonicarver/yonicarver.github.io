@@ -5,75 +5,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="scripts.js"></script>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="whereis_style.css">
 
 	<title>Where in the World is Yoni?</title> <!-- tab title -->
 	<link rel="icon" href="images/globe.png">  <!-- tab icon -->
-
-
-	<style>
-		table {
-			border:3px solid black;
-			/*border-collapse: collapse;*/
-			border-radius: 15px;
-			border-spacing: 0px;
-			padding: 5px;
-		}
-
-/* th = head 
-   td = column*/
-
-		th, td {
-			/*border-style: dotted;*/
-			/*border-radius: 15px;*/
-			border-bottom: 2px solid black;
-		}
-
-		#last_row {
-			border-bottom: none;
-			padding-bottom: 0px;
-		}
-
-
-
-		#center {
-			text-align: center;
-		}
-
-		#number_column {
-			border: inherit;
-			text-align: center;
-		}
-
-
-
-
-		#earth {
-			width: 50px;
-			height: 50px;
-			background: url("images/earth_clipart.jpg");
-			border-radius: 50%;
-			background-size: 70px;
-			box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.5), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
-			animation-name: rotate;
-			animation-duration: 20s;
-			animation-iteration-count: infinite;
-			animation-timing-function: linear;
-			/*-webkit-animation-name: rotate;
-			-webkit-animation-duration: 10s;
-			-webkit-animation-iteration-count: infinite;
-			-webkit-animation-timing-function: linear;*/
-		}
-		@keyframes rotate {
-		  from {
-		    background-position: 0px 0px;
-		  }
-		  to {
-		    background-position: 610px 0px;
-		  }
-		}
-
-	</style>
 
 
 </head>
@@ -85,10 +20,9 @@
 
 		<p>&nbsp;</p>
 
+		<h2> Laval, Quebec </h2>
+
 		<div id="earth"></div>
-
-		<h2> New York City </h2>
-
 
 		<p>&nbsp;</p>
 	
@@ -104,7 +38,7 @@
 		  allowfullscreen
 		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB52tlG0nyso395Tzl2aI20P65EGWo035o
 		    &q=
-		    New York City
+		    Laval, Quebec
 		    ">
 		</iframe>
 
@@ -115,6 +49,7 @@
 		<table style="width:20rem">
 			<tr><th> Previous Locations	</th></tr>
 
+			<tr><td> New York City 		</td></tr>
 			<tr><td> Laval, Quebec 		</td></tr>
 			<tr><td> New York City 		</td></tr>
 			<tr><td> Laval, Quebec 		</td></tr>
@@ -133,7 +68,7 @@
 			</tr>
 			
 			<tr>
-				<td> New York City 		</td><td id="center"> 2 </td>
+				<td> New York City 		</td><td id="center"> 3 </td>
 			</tr>
 
 			<tr>
