@@ -3,121 +3,103 @@
 <!-- thanks Adina <3 -->
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="scripts.js"></script>
-	<link rel="stylesheet" href="whereis_style.css">
-
+	<meta charset="UTF-8">
 	<title>Where in the World is Yoni?</title> <!-- tab title -->
 	<link rel="icon" href="images/globe.png">  <!-- tab icon -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="scripts.js"></script>
+	<!-- <link rel="stylesheet" href="whereis_style.css"> -->
 
+	<style>
+	body {
+	  font-family: "Roboto", sans-serif;
+	  margin: 0;
+	  background: #1a1a1a;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 60px 20px;
+	}
+	h1 {
+	  /*margin-bottom: 25px;*/
+	  font-weight: 700;
+	  font-size: 4em;
+	  color: #ff7f11;
+	}
+	h2 {
+	  /*margin-bottom: 25px;*/
+	  font-weight: 700;
+	  font-size: 3em;
+	  color: #ddd;
+	}
+	#location {
+	  /*margin: 60px 0;*/
+	  margin-bottom: 60px;
+	  font-size: 2.5em;
+	  font-weight: 350;
+	  color: #ddd;
+	  letter-spacing: 1px;
+	}
+	#map {
+	  height: 450px;
+	  width: 100%;
+	  max-width: 750px;
+	  margin: 0 auto;
+	  border-radius: 16px;
+	  box-shadow: 0 6px 25px rgba(255,127,17,0.4);
+	  border: 1px solid #333;
+	}
+	</style>
 
 </head>
 
   
 <body>
 	<center>
-		<h1 style="font-size: 50px"> Where in the World is Yoni?</h1>
-		<p style="font-size: 50px"> 🌎 </p>
+		<h1>Where in the World is Yoni?</h1>
+		<div id="location">
 
-		<p>&nbsp;</p>
+		NYC
 
-		<h2 style="font-size: 35px"> NYC </h2>
+		</div>
 
 		<!-- <div id="earth"></div> -->
-		<!-- spinning earth -->
-
-		<p>&nbsp;</p>
-	
+		<!-- spinning earth -->	
 		
 		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89319.32843135897!2d-73.77972000703853!3d45.60604159025869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc92107b4dfda6b%3A0x2eb4b26fe333c419!2sLaval%2C%20QC!5e0!3m2!1sen!2sca!4v1643597308855!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-		<p>&nbsp;</p>
+		<!-- <p>&nbsp;</p> -->
 		
 		<iframe
 		  width="60%"
 		  height="600px"
-		  style="border:0;border-radius: 15px;"
+		  style="
+		  	/*border:0;*/
+		  	/*border-radius: 15px;*/
+		  	height: 450px;
+			width: 100%;
+			max-width: 750px;
+			margin: 0 auto;
+			border-radius: 16px;
+			box-shadow: 0 6px 25px rgba(255,127,17,1.4);
+			border: 1px solid #333;"
 		  loading="lazy"
 		  allowfullscreen
 		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB52tlG0nyso395Tzl2aI20P65EGWo035o
 		    &q=
+
 		    NYC
+		    
 		    ">
 		</iframe>
 
 		<p>&nbsp;</p>
 
-
-    <a href="https://yonicarver.github.io/flightmapper.html" target="_blank">flightmapper</a>
-    <br>
-    <a href="https://yonicarver.github.io/placeswevebeen.html" target="_blank">places we've been</a>
-
-		
-<!-- 
-		<table style="width:20rem">
-			<tr><th> Previous Locations	</th></tr>
-
-			<tr><td> Lititz, PA 		</td></tr>
-			<tr><td> New York City 		</td></tr>
-			<tr><td> Las Vegas, NV 		</td></tr>
-			<tr><td> New York City 		</td></tr>
-			<tr><td> Lititz, PA 		</td></tr>
-			<tr><td> Laval, Quebec 		</td></tr>
-			<tr><td> New York City 		</td></tr>
-			<tr><td> Laval, Quebec 		</td></tr>
-			<tr><td> New York City 		</td></tr>
-			<tr><td> Laval, Quebec 		</td></tr>
-			<tr><td> Orlando, FL 		</td></tr>
-			<tr><td> Nassau, Bahamas 	</td></tr>
-			<tr><td> Laval, Quebec 		</td></tr>
-			<tr><td> New York City 		</td></tr>
-			<tr><td id="last_row"> Elmont, NY 		</td></tr>
-		</table>
-
-<p></p>
-
-		<table style="width:20rem">
-			<tr>
-				<th style="text-align: left;"> Locations </th><th> Count </th>
-			</tr>
-
-			<tr>
-				<td> Las Vegas, NV 		</td><td id="center"> 2 </td>
-			</tr>
-
-			<tr>
-				<td> New York City 		</td><td id="center"> 5 </td>
-			</tr>
-
-			<tr>
-				<td> Lititz, PA 		</td><td id="center"> 2 </td>
-			</tr>
-
-			<tr>
-				<td> Laval, Quebec 		</td><td id="center"> 4 </td>
-			</tr>
-
-			<tr>
-				<td> Orlando, FL 		</td><td id="center"> 1 </td>
-			</tr>
-
-			<tr>
-				<td> Nassau, Bahamas 	</td><td id="center"> 1 </td>
-			</tr>
-
-			<tr>
-				<td id="last_row"> Elmont, NY 		</td><td id="last_row" style="text-align: center;"> 1 </td>
-			</tr>
-
-		</table>
+		<p style="font-size: 50px"> 🌎 </p>
 
 
-
-<p>&nbsp;</p>
-
- -->
-
-
-
+	    <a href="https://yonicarver.github.io/flightmapper.html" target="_blank">flightmapper</a>
+	    <br>
+	    <a href="https://yonicarver.github.io/placeswevebeen.html" target="_blank">places we've been</a>
 
 	</center>
 </body>
