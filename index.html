@@ -1,25 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="scripts.js"></script>
-	<link rel="stylesheet" href="index_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoni Carver</title>
+    <style>
+        :root {
+            --bg: #111111;
+            --surface: #151515;
+            --neon: #ff5f1f;
+            --text: #ffffff;
+            --dim: #5e5d5d;
+            --max-limit: 851px; /* The specific cap you requested */
+        }
 
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0 20px; /* Prevents edge-touching on mobile */
+        }
+
+        /* Container that handles the 851px logic */
+        .container {
+            width: 100%;
+            max-width: var(--max-limit);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Sleek Status Bar */
+        .status-bar {
+            padding: 30px 0 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 1px solid var(--dim);
+        }
+
+        .terminal-path {
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+            color: var(--text);
+            text-transform: uppercase;
+        }
+
+        .terminal-path span {
+            color: var(--neon);
+        }
+
+        .nav-links a {
+            color: var(--dim);
+            text-decoration: none;
+            font-size: 0.7rem;
+            margin-left: 20px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--neon);
+        }
+
+        /* The Main Component */
+        .main-frame {
+            margin: 30px 0;
+            background: #ffffff;
+            border: 1px solid #222;
+            position: relative;
+            /* Height remains fixed/large for the spreadsheet scroll */
+            height: 1000px; 
+        }
+
+        /* Terminal Window Header */
+        .frame-header {
+            background: var(--surface);
+            height: 32px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            border-bottom: 1px solid #000;
+        }
+
+        .dot { height: 6px; width: 6px; background: #333; border-radius: 50%; margin-right: 6px; }
+
+        iframe {
+            width: 100%;
+            /*height: calc(100% - 32px);*/
+            height: 100%;
+            border: none;
+        }
+
+        /* Bottom Command Line */
+        .footer-terminal {
+            padding-bottom: 30px;
+            font-size: 0.75rem;
+            color: var(--neon);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+    </style>
 </head>
 <body>
 
-<h1 style="font-family: monospace; font-size: 150;">
-	Yoni Carver
-</h1>
+    <div class="container">
+        <div class="status-bar">
+            <div class="terminal-path">
+                RESUME / <span>YONI_CARVER</span> / 
+            </div>
+            <nav class="nav-links">
+                <a href="https://linkedin.com/in/yoni-carver" target="_blank">LINKEDIN</a>
+                <a href="https://github.com/yonicarver" target="_blank">GITHUB</a>
+            </nav>
+        </div>
 
+        <div class="main-frame">
+            <iframe
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTJb8-cNT-tIHRrGFNYI-saTBVuHkWm4oHdLWjZoIGALND8DxLlCcU8qU1_P2uZ1wVCHBIQmArXcd9N/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false"
+                width="851"
+                height="1500"
+                frameBorder="0"
+                border="0">
+            </iframe>
+        </div>
 
-<iframe
-	src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTJb8-cNT-tIHRrGFNYI-saTBVuHkWm4oHdLWjZoIGALND8DxLlCcU8qU1_P2uZ1wVCHBIQmArXcd9N/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false"
-	width="851"
-	height="1500"
-	frameBorder="0"
-	border="0">
-</iframe>
+        <div class="footer-terminal">
+            <span>end</span>
+        </div>
+    </div>
 
 </body>
 </html>
